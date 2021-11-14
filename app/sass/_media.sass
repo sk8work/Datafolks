@@ -1,0 +1,152 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media screen and (max-width : 1200px)
+    .img-links__item
+        height: 450px
+    .footer__contacts
+        width: 48%
+    .footer-form
+        width: 48%
+/* Medium Devices, Desktops */
+@media screen and (max-width : 991px)
+    body
+        padding-top: 84px
+    .section
+        padding-top: 84px
+        padding-bottom: 84px
+    .img-links__item
+        height: 400px
+    .footer-container
+        flex-direction: column-reverse
+        align-items: center
+    .footer__contacts
+        width: 80%
+    .footer-form
+        width: 80%
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+    body
+        padding-top: 63px
+    .section
+        padding-top: 63px
+        padding-bottom: 63px
+    .h1
+        font-size: 2rem
+        margin-bottom: 42px
+    .p
+        font-size: 1rem
+    .img-links__item
+        height: 330px
+    .img-links__description
+        font-size: 1.2rem
+    .btn
+        font-size: 1rem
+    .img-links__list
+        margin-bottom: 42px
+    .footer__contacts
+        width: 95%
+        .h2
+            margin-bottom: 42px
+    .footer-form
+        width: 95%
+        padding: 24px
+    .tel__item
+        a
+            font-size: 1rem
+    .links__item
+        font-size: 1rem
+        a
+            font-size: 1rem
+    .footer-container
+        padding-bottom: 42px
+
+@media only screen and (max-width : 640px)
+    .img-links__list
+        flex-direction: column
+        align-items: center
+    .img-links__item
+        height: 500px
+        width: 100%
+        &:not(:last-child)
+            margin-bottom: 24px
+    .links__item:not(:last-child)
+        margin-bottom: 8px
+    .contacts-data
+        margin-top: 42px
+    .footer__contacts
+        margin-top: 42px
+        .h2
+            margin-bottom: 24px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+    body
+        padding-top: 42px
+    .section
+        padding-top: 42px
+        padding-bottom: 42px
+    .btn
+        width: 100%
+        padding: 12px 0px
+        border: 2px solid $btn-color
+    .img-links__item
+        height: 340px
+    .footer-form .btn
+        padding: 12px 0px
+        border: 2px solid white
+    .footer__contacts
+        width: 100%
+    .footer-form
+        width: 100%
+        padding: 12px
+        border: 2px solid $blue-grey-color
+        input, textarea
+            padding: 12px 18px
+    .contacts-data
+        flex-direction: column
+        align-items: flex-start
+    .links__item
+        margin-top: 24px
+    .v-line
+        display: none
+    .agreement
+        font-size: .8rem
+        text-align: center
+    .modal-footer
+        .btn
+            &:not(:last-child)
+                margin-bottom: 12px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+    /**/
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+    /**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+    /**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+    /**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+    /**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+    /**/

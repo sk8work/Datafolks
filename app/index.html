@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+<!--  Header  -->
+<header class="header">
+	<div class="header-description">
+		<h1 class="h1">Реализованные проекты</h1>
+		<p class="p">Коммуникационное агентство часть многофункционального холдинга, объединяющего различные компании на&nbsp;территории Росссии
+			и&nbsp;ближнего зарубежья.</p>
+		<p class="p">Наши подходы к&nbsp;организации бизнеса и&nbsp;имеющиеся ресурсы позволяют одиноково эффективно обеспечивать
+			реализацию как крупномасштабных федеральных или международных проектов, так и&nbsp;решать небольшие локальные задачи.
+			Мы&nbsp;находимся в&nbsp;постоянном развитии расширяя и&nbsp;укрепляя имеющиеся бизнес-направления, а&nbsp;также формируя новые.</p>
+	</div>
+</header>
+
+
+<!--  Main content  -->
+<section class="section img-links-section">
+	<div class="img-links-wrapper">
+		<ul class="img-links__list">
+			<li class="img-links__item">
+				<a href="#">
+					<div class="img-links__item-wrapper">
+						<h3 class="h3 img-links__description">Республика Саха</h3>
+					</div>
+				</a>
+			</li>
+			<li class="img-links__item">
+				<a href="#">
+					<div class="img-links__item-wrapper">
+						<h3 class="h3 img-links__description">Газпром</h3>
+					</div>
+				</a>
+			</li>
+			<li class="img-links__item">
+				<a href="#">
+					<div class="img-links__item-wrapper">
+						<h3 class="h3 img-links__description">Nokia</h3>
+					</div>
+				</a>
+			</li>
+		</ul>
+
+		<button class="btn">Загрузить еще</button>
+	</div>
+</section>
+
+
+<!--  Footer  -->
+<footer class="footer">
+	<div class="footer-container">
+		<!--	Контакты	-->
+		<div class="footer__contacts">
+			<div class="row">
+				<h2 class="h2 col-lg-12">Контакты</h2>
+				<p class="p agency col-lg-12">Коммуникационное агентство</p>
+				<div class="col-xl-6 col-lg-12">
+					<a class="address" href="https://yandex.ru/maps/?rtext=~47.246497,39.768058" title="Построить маршрут" target="_blank">
+						344000, Россия, г. Ростов-на-Дону ул. Мира, д.&nbsp;12&nbsp;Бизнес&dash;центр &laquo;Рост&raquo;, оф.&nbsp;104
+					</a>
+				</div>
+				<div class="col-xl-6 col-lg-12"></div>
+				<div class="col-xl-9 col-lg-12 contacts-data">
+					<ul class="tel__list">
+						<li class="tel__item"><a href="tel:+78613001128">+7(861)300-11-28</a></li>
+						<li class="tel__item"><a href="tel:+78613001152">+7(861)300-11-52</a></li>
+						<li class="tel__item"><a href="tel:+78613001152">+7(861)300-11-52</a></li>
+					</ul>
+					<div class="v-line"></div>
+					<ul class="links__list">
+						<li class="links__item"><p class="p">E-mail:</p><p class="p"><a href="mailto:info@example.com" title="Нажмите, чтобы написать нам">
+							info@example.com</a></p></li>
+						<li class="links__item"><a href="http://facebook.com/exampleagency" title="Мы в facebook">
+							facebook.com/exampleagency</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!--	Форма обратной связи	-->
+		<form action="https://jsonplaceholder.typicode.com/posts" class="footer-form" method="post">
+			<label>
+				<input type="text" name="name" id="name" placeholder="Полное имя" required>
+			</label>
+
+			<label>
+				<input type="email" name="email" id="email" placeholder="E-mail" required>
+			</label>
+
+			<label>
+				<input type="tel" name="tel" id="tel" placeholder="Телефон">
+			</label>
+
+			<textarea name="question" id="question" rows="5" placeholder="Пожалуйста, опишите задачу" required></textarea>
+
+			<div class="checker" title="Необходимо принять соглашение">
+				<label><input class="checkbox" type="checkbox" name="check" id="check" checked="checked" required>&nbsp;Соглашаюсь c&nbsp;</label>
+				<a class="agreement" data-toggle="modal" data-target="#exampleModalCenteredScrollable">Политикой обработки персональных данных</a>
+			</div>
+
+			<button type="submit" class="btn">Отправить заявку</button>
+
+		</form>
+
+
+	</div>
+	<p class="copy p">&copy; 2021</p>
+	<!-- Modal window -->
+	<div class="modal fade" id="exampleModalCenteredScrollable" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title h5" id="staticBackdropLabel">Согласие на обработку персональных данных</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="p">Предоставляя свои персональные данные Пользователь даёт согласие на&nbsp;обработку,
+						хранение и&nbsp;использование своих персональных данных на&nbsp;основании ФЗ &#8470;&nbsp;152-ФЗ &laquo;О&nbsp;персональных
+						данных&raquo; от&nbsp;27.07.2006&nbsp;г.&nbsp;в&nbsp;следующих целях:</p>
+					<ul class="agreement__list">
+						<li class="agreement__item">Фамилия, Имя, Отчество</li>
+						<li class="agreement__item">Дата рождения</li>
+						<li class="agreement__item">Контактный телефон</li>
+						<li class="agreement__item">Адрес электронной почты</li>
+						<li class="agreement__item">Почтовый адрес</li>
+					</ul>
+					<p class="p">Персональные данные Пользователей хранятся исключительно на&nbsp;электронных носителях
+						и&nbsp;обрабатываются с&nbsp;использованием автоматизированных систем, за&nbsp;исключением случаев,
+						когда неавтоматизированная обработка персональных данных необходима в&nbsp;связи с&nbsp;исполнением
+						требований законодательства.</p>
+					<p class="p">Коммуникационное агентство обязуется не&nbsp;передавать полученные персональные данные
+						третьим лицам, за&nbsp;исключением следующих случаев:</p>
+					<ul class="agreement__list">
+						<li class="agreement__item">По запросам уполномоченных органов государственной власти РФ только по
+							основаниям и в порядке, установленным законодательством РФ</li>
+						<li class="agreement__item">Стратегическим партнерам, которые работают с&nbsp;Компанией для
+							предоставления продуктов и&nbsp;услуг, или тем из&nbsp;них, которые помогают Компании реализовывать
+							продукты и&nbsp;услуги потребителям. Мы&nbsp;предоставляем третьим лицам минимальный объем
+							персональных данных, необходимый только для оказания требуемой услуги или проведения необходимой транзакции.</li>
+						<li class="agreement__item">Коммуникационное агентство оставляет за&nbsp;собой право
+							вносить изменения в&nbsp;одностороннем порядке в&nbsp;настоящие правила, при условии, что
+							изменения не&nbsp;противоречат действующему законодательству РФ. Изменения условий настоящих
+							правил вступают в&nbsp;силу после их&nbsp;публикации на&nbsp;Сайте.</li>
+
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button class="btn" data-dismiss="modal">Закрыть</button>
+					<button class="btn agree" data-dismiss="modal">Принять</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!--  Custom scripts  -->
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

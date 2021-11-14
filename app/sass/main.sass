@@ -1,0 +1,304 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	border-radius: 0
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+body
+	font-size: 16px
+	padding-top: 101px
+	color: $main-text-color
+	font-family: dinpro
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus
+	-webkit-text-fill-color: white
+	transition: background-color 5000s ease-in-out 0s
+
+input::selection,
+textarea::selection
+	color: $blue-color
+
+.btn
+	padding: 24px 113px
+	background: transparent
+	border: 3px solid $btn-color
+	border-radius: 0
+	font-size: 1.125rem
+	letter-spacing: -0.45px
+	color: $main-text-color
+	text-transform: uppercase
+	margin: 0 auto
+	transition: color .2s ease-in-out, background .2s ease-in-out
+	cursor: pointer
+	outline: none
+	font-weight: bold
+	&:hover
+		color: white
+		background: $btn-color
+	&:focus
+		outline: none
+		box-shadow: none
+	&:active
+		outline: none
+
+ul
+	margin-bottom: 0
+	list-style: none
+	padding: 0
+
+a
+	text-decoration: none
+	&:hover
+		text-decoration: none
+
+.h1
+	margin-bottom: 65px
+	line-height: 100%
+	font-size: 2.9rem
+	text-transform: uppercase
+.p
+	margin-bottom: 30px
+	font-size: 1.125rem
+
+b, strong
+	font-weight: bold
+
+.header
+	.h1, .p
+		text-align: center
+
+.header-description
+	max-width: 1158px
+	padding-left: 15px
+	padding-right: 15px
+	margin: auto
+	.p
+		font-family: myriadpro
+
+.img-links-section
+	padding-top: 141px
+	padding-bottom: 106px
+
+.img-links-wrapper
+	margin: auto
+	max-width: 1680px
+	padding-left: 15px
+	padding-right: 15px
+	display: flex
+	flex-direction: column
+
+.img-links__list
+	display: flex
+	margin-bottom: 107px
+
+.img-links__item-wrapper
+	position: absolute
+	width: 100%
+	height: 60%
+	bottom: 0
+	left: 0
+	display: flex
+	align-items: end
+	justify-content: center
+	background: linear-gradient(0deg, rgba(37, 54, 64, .7) 0%, rgba(37, 54, 64, 0) 100%)
+	transition: height .4s ease-in-out, background .4s ease-in-out
+
+.img-links__item
+	height: 577px
+	width: 550px
+	max-width: 550px
+	position: relative
+	overflow: hidden
+	&:first-child
+		background: url(../img/sacha.jpg)
+		background-position: center
+		background-size: cover
+		background-repeat: no-repeat
+	&:nth-child(2)
+		background: url(../img/gaz.jpg)
+		background-position: center
+		background-size: cover
+		background-repeat: no-repeat
+	&:last-child
+		background: url(../img/nokia.jpg)
+		background-position: center
+		background-size: cover
+		background-repeat: no-repeat
+	&:hover
+		.img-links__item-wrapper
+			height: 100%
+	& a
+		display: inline-block
+		position: relative
+		width: 100%
+		height: 100%
+
+
+.img-links__description
+	color: white
+	text-transform: uppercase
+	margin-bottom: 44px
+	line-height: 100%
+	font-size: 1.5rem
+	font-weight: bold
+
+.footer
+	background: $dark-blue-color
+	min-height: 100px
+
+.footer-container
+	margin: auto
+	padding: 32px 15px 97px
+	max-width: 1460px
+	display: flex
+	justify-content: space-between
+
+.footer__contacts
+	margin-top: 58px
+	width: 55%
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	color: white
+	font-family: myriadpro
+	.h2
+		margin-bottom: 73px
+		font-family: dinpro
+		font-weight: bold
+	.agency
+		margin-bottom: 28px
+.address
+	color: white
+	border-bottom: 1px solid transparent
+	transition: border-bottom .2s ease-in-out
+	&:hover
+		border-bottom: 1px solid white
+		color: white
+
+.contacts-data
+	margin-top: 60px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	font-family: myriadpro
+	.p
+		margin-bottom: 0
+.tel__item
+	a
+		color: white
+		font-size: 1.5rem
+		border-bottom: 1px solid transparent
+		transition: border-bottom .2s ease-in-out
+		&:hover
+			border-bottom: 1px solid white
+
+.links__item
+	font-size: 1.125rem
+	color: $light-blue-color
+	&:not(:last-child)
+		margin-bottom: 18px
+	a
+		color: $light-blue-color
+		border-bottom: 1px solid transparent
+		transition: border-bottom .2s ease-in-out
+		font-size: 1.125rem
+		&:hover
+			border-bottom: 1px solid $light-blue-color
+
+.v-line
+	width: 3px
+	align-self: stretch
+	background: $light-blue-color
+
+.footer-form
+	padding: 38px
+	width: 38%
+	border: 5px solid $blue-grey-color
+	display: flex
+	flex-direction: column
+	color: white
+	font-weight: 500
+	input, textarea
+		padding: 21px 36px 23px
+		border: none
+		width: 100%
+		background: $blue-grey-color
+		color: white
+		font-size: .94rem
+		outline: none
+		&::placeholder
+			color: white
+		textarea
+			height: 112px
+		&:focus
+			background: $blue-grey-color
+		&:active
+			background: $blue-grey-color
+		&::selection
+			background: $blue-grey-color
+	label
+		margin-bottom: 2px
+	.btn
+		margin-top: 19px
+		padding: 24px 62px
+		color: white
+		border-color: white
+		&:hover
+			background: white
+			color: $dark-blue-color
+	.checker
+		margin-top: 18px
+		justify-content: center
+		align-items: baseline
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		color: $blue-color
+		line-height: 110%
+		.checkbox
+			width: initial
+.agreement
+	color: $blue-color
+	line-height: 110%
+	border-bottom: 1px solid $blue-color
+	cursor: pointer
+	transition: border-bottom .2s ease-in-out, color .2s ease-in-out
+	&:hover
+		border-bottom: 1px solid white
+		color: white
+
+.copy
+	margin-bottom: 0
+	font-size: 1rem
+	text-align: center
+
+.modal
+	.modal-header
+		border-radius: 0
+	.modal-content
+		border-radius: 0
+	.modal-body
+		.p
+			text-align: left
+	.modal-footer
+		display: flex
+		justify-content: space-between
+		border-radius: 0
+	.btn
+		font-size: 1.125rem
+		padding: 12px 24px
+
+@import "media" // Всегда в конце
